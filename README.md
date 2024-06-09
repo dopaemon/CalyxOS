@@ -8,6 +8,26 @@ The [Building CalyxOS](https://calyxos.org/docs/development/build/) page on our 
 
 Contributions to the project are always welcome. Please check out the documentation on [Gerrit Code Review](https://calyxos.org/docs/development/gerrit/) which covers the general setup and workflow.
 
+## Sync
+```bash
+repo init -u https://github.com/dopaemon/CalyxOS.git -b android14
+```
+
+```bash
+repo sync -c --force-sync --no-clone-bundle --no-tags -j8
+```
+
+## Build
+```bash
+source build/envsetup.sh
+```
+```bash
+lunch calyx_bluejay-ap1a-userdebug
+```
+```bash
+m -j$(nproc --all) | tee log.txt
+```
+
 ## Translations
 
 Missing your language?
