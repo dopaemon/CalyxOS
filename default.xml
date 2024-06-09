@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <remote  name="gitlab"
-           fetch=".."
+           fetch="https://gitlab.com"
            review="review.calyxos.org"
            revision="refs/heads/android14" />
   <remote  name="gitlab-priv"
